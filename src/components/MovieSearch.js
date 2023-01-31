@@ -1,11 +1,22 @@
 import { useState } from 'react'
 
-function MovieSearch() {
+function MovieSearch({ onCreate }) {
+    const [input, setInput] = useState('')
 
+    const handleChange = (event) => {
+        setInput(event.target.value)
+    }
+
+    const handleSubmit = (event) => {
+        event.preventDefault()
+        onCreate(input)
+
+    }
     return (
         <div>
-            <form>
-                <input value={} onChange={handleChange} />
+            <form onSubmit={handleSubmit}>
+                <div>Movie name</div>
+                <input value={input} onChange={handleChange} />
                 <button>Click me!</button>
             </form>
         </div>

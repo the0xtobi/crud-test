@@ -4,8 +4,8 @@ import MovieSearch from './components/MovieSearch';
 function App() {
   const [movies, setMovies] = useState([])
 
-  const createMovie = () => {
-    console.log()
+  const createMovie = (input) => {
+    console.log(input)
   }
 
   return (
