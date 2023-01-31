@@ -10,7 +10,7 @@ function MovieSearch({ onCreate }) {
     const handleSubmit = (event) => {
         event.preventDefault()
         onCreate(input)
-
+        setInput('')
     }
     return (
         <div>
