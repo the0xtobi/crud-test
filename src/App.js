@@ -5,7 +5,7 @@ function App() {
   const [movies, setMovies] = useState([])
 
   const createMovie = (input) => {
-    console.log(input)
+    
   }
 
   return (
