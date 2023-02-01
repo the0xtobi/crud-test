@@ -1,5 +1,7 @@
-function MovieList(){
-    return(
+function MovieList({ movies }) {
+    const mapedMovies = 
+   
+    return (
         <div>
             movielist
         </div>

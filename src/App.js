@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import MovieSearch from './components/MovieSearch';
+import MovieList from './components/MovieList';
 
 function App() {
   const [movies, setMovies] = useState([])
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <div className="App">
+      <MovieList movies={movies} />
       <MovieSearch onCreate={createMovie} />
     </div>
   );
