@@ -5,7 +5,9 @@ function App() {
   const [movies, setMovies] = useState([])
 
   const createMovie = (input) => {
-    
+    const updatedMovies = [...movies,
+    { id: Math.round(Math.random() * 9999), title: input }]
+    setMovies(updatedMovies)
   }
 
   return (
