@@ -1,7 +1,7 @@
-function MovieShow(){
+function MovieShow({ movie }){
     return(
         <div>
-            movie
+            {MovieShow.id}
         </div>
     )
 }
