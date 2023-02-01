@@ -7,7 +7,7 @@ function MovieList({ movies }) {
    
     return (
         <div>
-            {mapedMovies}
+            <h2> {mapedMovies} </h2>
         </div>
     )
 }
