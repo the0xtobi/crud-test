@@ -4,7 +4,8 @@ import MovieList from './components/MovieList';
 
 
 function App() {
-  // This will contain all the movies in our app. It's our store, movies.
+  // This will contain all the movies in our app. It's our store, movies. Thats why-
+  // the default state is an empty array
   const [movies, setMovies] = useState([])
 
   // This is the function responsible for creating our movie. How does it work? we-
