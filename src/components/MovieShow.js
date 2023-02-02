@@ -1,7 +1,8 @@
 function MovieShow({ movie }){
     return(
+        // div displays title of the movie
         <div>
-            {movie.title}  // shows the tiltle of the movie
+            {movie.title}
         </div>
     )
 }
