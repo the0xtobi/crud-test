@@ -4,7 +4,7 @@ function MovieSearch({ createMovie }) {
     const [input, setInput] = useState('')
 
     const handleChange = (event) => {
-        setInput(event.target.value)
+        setInput(event.target.value)  // gets us what the user types
     }
 
     const handleSubmit = (event) => {
