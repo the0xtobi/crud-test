@@ -8,9 +8,9 @@ function MovieSearch({ onCreate }) {
     }
 
     const handleSubmit = (event) => {
-        event.preventDefault()
+        event.preventDefault()   // prevents page from reloading
         onCreate(input)
-        setInput('')
+        setInput('')  // returns our input box back to empty after we submit
     }
     return (
         <div>
