@@ -17,6 +17,9 @@ function App() {
   // Now movies been created and will need to be displayed. how? passed down as a-
   // prop into movielist.
 
+  // Since we have a create function, how do we get the user input? we collect it-
+  // from MovieSearch. How? pass it  as a prop
+
   return (
     <div className="App">
       <MovieList movies={movies} />
