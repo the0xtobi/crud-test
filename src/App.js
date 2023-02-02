@@ -18,12 +18,12 @@ function App() {
   // prop into movielist.
 
   // Since we have a create function, how do we get the user input? we collect it-
-  // from MovieSearch. How? pass it  as a prop
+  // from MovieSearch. How? pass it as a prop.
 
   return (
     <div className="App">
       <MovieList movies={movies} />
-      <MovieSearch onCreate={createMovie} />
+      <MovieSearch createMovie={createMovie} />
     </div>
   );
 }

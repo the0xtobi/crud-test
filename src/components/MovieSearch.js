@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function MovieSearch({ onCreate }) {
+function MovieSearch({ createMovie }) {
     const [input, setInput] = useState('')
 
     const handleChange = (event) => {
@@ -9,7 +9,7 @@ function MovieSearch({ onCreate }) {
 
     const handleSubmit = (event) => {
         event.preventDefault()   // prevents page from reloading
-        onCreate(input)
+        createMovie(input)
         setInput('')  // returns our input box back to empty after we submit
     }
     return (
