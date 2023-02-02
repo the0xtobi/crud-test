@@ -2,6 +2,7 @@ import { useState } from 'react';
 import MovieSearch from './components/MovieSearch';
 import MovieList from './components/MovieList';
 
+
 function App() {
   // This will contain all the movies in our app. It's our store, movies.
   const [movies, setMovies] = useState([])
