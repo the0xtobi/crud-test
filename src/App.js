@@ -8,8 +8,20 @@ function App() {
   // the default state is an empty array
   const [movies, setMovies] = useState([])
 
-  // This is the function responsible for creating our movie. How does it work? we-
+  
+const deleteMovieById = (id) =>{
+  const updatedMovies = movies.filter((movie) =>{
+    return(
+      movie.id !== id
+    )
+  })
+  setMovies(updatedMovies)
+}
+
+
+// This is the function responsible for creating our movie. How does it work? we-
   // collect user input and add it to our store.
+
   const createMovie = (input) => {
     const updatedMovies = [...movies,
     { id: Math.round(Math.random() * 9999), title: input }]
