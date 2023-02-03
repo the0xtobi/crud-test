@@ -36,7 +36,7 @@ const deleteMovieById = (id) =>{
 
   return (
     <div className="App">
-      <MovieList movies={movies} />
+      <MovieList movies={movies} deleteMovieById={deleteMovieById} />
       <MovieSearch createMovie={createMovie} />
     </div>
   );
