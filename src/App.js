@@ -12,7 +12,7 @@ function App() {
 const deleteMovieById = (id) =>{
   const updatedMovies = movies.filter((movie) =>{
     return(
-      movie.id !== id
+      movie.id !== id // Filter keeps true and deletes false
     )
   })
   setMovies(updatedMovies)
