@@ -8,7 +8,7 @@ function MovieList({ movies, deleteMovieById }) {
    
     return (
         <div>
-            <h2> {mapedMovies} </h2>
+            <h2> {mapedMovies} </h2> //hgffgh
         </div>
     )
 }
