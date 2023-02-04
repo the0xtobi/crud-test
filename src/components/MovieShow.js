@@ -1,4 +1,5 @@
 function MovieShow({ movie, deleteMovieById }){
+    // we have to use handler onClick + recieve the movie id
     const handleClick = () =>{
         deleteMovieById(movie.id)
     }
