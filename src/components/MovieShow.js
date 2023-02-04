@@ -4,7 +4,8 @@ function MovieShow({ movie, deleteMovieById }){
         deleteMovieById(movie.id)
     }
     return(
-        // div displays title of the movie
+        // div displays title of the movie and button to delete movie tile by-
+        // accessing its id
         <div>
             {movie.title}
             <button onClick={handleClick}>X</button>
