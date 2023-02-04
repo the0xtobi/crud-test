@@ -8,7 +8,7 @@ function App() {
   // the default state is an empty array
   const [movies, setMovies] = useState([])
 
-  
+  // This func iis responsible for deleting movie identified by its id
 const deleteMovieById = (id) =>{
   const updatedMovies = movies.filter((movie) =>{
     return(
